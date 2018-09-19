@@ -1,9 +1,7 @@
-//const entities = require('entities');
 const defaults = {
     fg: '#FFF',
     bg: '#000',
     newline: false,
-    escapeXML: false,
     stream: false,
     colors: getDefaultColors()
 };
@@ -231,10 +229,6 @@ function categoryForCode(code) {
  * @returns {string}
  */
 function pushText(text, options) {
-    /*if (options.escapeXML) {
-        return entities.encodeXML(text);
-    }*/
-
     return text;
 }
 
