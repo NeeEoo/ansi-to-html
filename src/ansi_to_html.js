@@ -1,4 +1,4 @@
-const entities = require('entities');
+//const entities = require('entities');
 const defaults = {
     fg: '#FFF',
     bg: '#000',
@@ -231,9 +231,9 @@ function categoryForCode(code) {
  * @returns {string}
  */
 function pushText(text, options) {
-    if (options.escapeXML) {
+    /*if (options.escapeXML) {
         return entities.encodeXML(text);
-    }
+    }*/
 
     return text;
 }
