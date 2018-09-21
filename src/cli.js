@@ -1,5 +1,5 @@
 /* eslint no-console:0 */
-const help = '\nuasge: ansi-to-html [options] [file]\n    \nfile:  The file to display or stdin\n    \noptions:    \n    \n    -f, --fg         The background color used for resets (#000)\n    -b, --bg         The foreground color used for resets (#FFF)\n    -n, --newline    Convert newline characters to <br/>  (false)\n    -x, --escapeXML  Generate XML entities                (false)\n    -v, --version    Print version\n    -h, --help       Print help\n    ';
+const help = '\nuasge: ansi-to-html [options] [file]\n    \nfile:  The file to display or stdin\n    \noptions:    \n    \n    -f, --fg         The background color used for resets (#000)\n    -b, --bg         The foreground color used for resets (#FFF)\n    -n, --newline    Convert newline characters to <br/>  (false)\n    -v, --version    Print version\n    -h, --help       Print help\n    ';
 var file = null,
     skip = false,
     args = {
@@ -16,10 +16,6 @@ for (var i = 2, j = 2, ref = process.argv.length; 2 <= ref ? j < ref : j > ref; 
         case '-n':
         case '--newline':
             args.newline = true;
-            break;
-        case '-x':
-        case '--escapeXML':
-            args.escapeXML = true;
             break;
         case '-f':
         case '--fg':

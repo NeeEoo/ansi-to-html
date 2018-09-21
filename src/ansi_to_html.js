@@ -74,7 +74,7 @@ function toHexString(num) {
 
 /**
  * Converts from an array of numbers like [15, 15, 15] to a hex string like 'FFF'
- * @param {[red, green, blue]} ref
+ * @param {[number, number, number]} ref
  * @returns {string}
  */
 function toColorHexString(ref) {

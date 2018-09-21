@@ -1,6 +1,6 @@
 {
-  "name": "ansi-to-html-no-xml",
-  "version": "0.6.7",
+  "name": "@neeeoo/ansi-to-html-no-xml",
+  "version": "0.6.8",
   "description": "Convert ansi escaped text streams to html.",
   "main": "lib/ansi_to_html.js",
   "engines": {
@@ -64,7 +64,6 @@
   "bin": {
     "ansi-to-html": "./bin/ansi-to-html"
   },
-  "private": true,
   "babel": {
     "presets": ["env"]
   }

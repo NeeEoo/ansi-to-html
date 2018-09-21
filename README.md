@@ -14,11 +14,11 @@ It has a few additions:
 
 ## Installation
 
-	npm install ansi-to-html-no-xml
+	npm install @neeeoo/ansi-to-html-no-xml
 
 ## Usage
 
-	var Convert = require('ansi-to-html-no-xml');
+	var Convert = require('@neeeoo/ansi-to-html-no-xml');
 	var convert = new Convert();
 
 	console.log(convert.toHtml('\x1b[30mblack\x1b[37mwhite'));

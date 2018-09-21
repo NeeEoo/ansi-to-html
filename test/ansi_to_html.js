@@ -289,14 +289,14 @@ describe('ansi to html', function () {
         });
     });
 
-    describe('with escapeXML option enabled', function () {
+    /*describe('with escapeXML option enabled', function () {
         it('escapes XML entities', function (done) {
             const text = 'normal, \x1b[1;4;31;mbold, <underline>, and red\x1b[0m, normal';
             const result = 'normal, <b><u><span style="color:#A00">bold, &lt;underline&gt;, and red</span></u></b>, normal';
 
             return test(text, result, done, {escapeXML: true});
         });
-    });
+    });*/
 
     describe('with newline option enabled', function () {
         it('renders line breaks', function (done) {
