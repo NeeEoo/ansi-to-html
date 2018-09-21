@@ -14,11 +14,11 @@ It has a few additions:
 
 ## Installation
 
-	npm install ansi-to-html
+	npm install ansi-to-html-no-xml
 
 ## Usage
 
-	var Convert = require('ansi-to-html');
+	var Convert = require('ansi-to-html-no-xml');
 	var convert = new Convert();
 
 	console.log(convert.toHtml('\x1b[30mblack\x1b[37mwhite'));
@@ -55,8 +55,6 @@ Options can be be passed to the constructor to customize behaviour.
 
 **newline** <code>true or false</code> Convert newline characters to <code>&lt;br/&gt;</code>.
 
-**escapeXML** <code>true or false</code> Generate HTML/XML entities.
-
 **stream** <code>true or false</code> save style state across invocations of toHtml().
 
 **colors** <code>Object/Array with values 0 - 255 containing CSS color values</code> Can override specific colors or the entire ANSI palette
@@ -68,7 +66,6 @@ Options can be be passed to the constructor to customize behaviour.
     fg: '#FFF',
     bg: '#000',
     newline: false,
-    escapeXML: false,
     stream: false
 }
 ```
@@ -80,7 +77,7 @@ Options can be be passed to the constructor to customize behaviour.
 
 Once you have the git repository cloned, install the dependencies:
 
-    cd ansi-to-html
+    cd ansi-to-html-no-xml
     npm install
 
 Lint
