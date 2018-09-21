@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NeeEoo/ansi-to-html.git"
+    "url": "https://github.com/NeeEoo/ansi-to-html-no-xml.git"
   },
   "bugs": {
-    "url": "https://github.com/NeeEoo/ansi-to-html/issues"
+    "url": "https://github.com/NeeEoo/ansi-to-html-no-xml/issues"
   },
   "keywords": [
     "ansi",
@@ -60,9 +60,6 @@
     "chai": "~3.5.0",
     "eslint": "^3.13.1",
     "mocha": "^3.2.0"
-  },
-  "dependencies": {
-    "entities": "^1.1.1"
   },
   "bin": {
     "ansi-to-html": "./bin/ansi-to-html"
