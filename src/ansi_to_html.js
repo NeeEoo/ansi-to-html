@@ -1,5 +1,5 @@
 const defaults = {
-    fg: '#FFF',
+    fg: '#fff',
     bg: '#000',
     newline: false,
     stream: false,
@@ -9,21 +9,21 @@ const defaults = {
 function getDefaultColors() {
     const colors = {
         0: '#000',
-        1: '#A00',
-        2: '#0A0',
-        3: '#A50',
-        4: '#00A',
-        5: '#A0A',
-        6: '#0AA',
-        7: '#AAA',
+        1: '#a00',
+        2: '#0a0',
+        3: '#a50',
+        4: '#00a',
+        5: '#a0a',
+        6: '#0aa',
+        7: '#aaa',
         8: '#555',
-        9: '#F55',
-        10: '#5F5',
-        11: '#FF5',
-        12: '#55F',
-        13: '#F5F',
-        14: '#5FF',
-        15: '#FFF'
+        9: '#f55',
+        10: '#5f5',
+        11: '#ff5',
+        12: '#55f',
+        13: '#f5f',
+        14: '#5ff',
+        15: '#fff'
     };
 
     range(0, 5).forEach(red => {
@@ -32,7 +32,7 @@ function getDefaultColors() {
         });
     });
 
-    range(0, 23).forEach(function (gray) {
+    range(0, 23).forEach(function(gray) {
         const c = gray + 232;
         const l = toHexString(gray * 10 + 8);
 
@@ -97,7 +97,7 @@ function generateOutput(stack, token, data, options) {
     var result;
 
     if (token === 'text') {
-        result = pushText(data, options);
+        result = pushText(data);
     } else if (token === 'display') {
         result = handleDisplay(stack, data, options);
     } else if (token === 'xterm256') {
@@ -158,7 +158,7 @@ function resetStyles(stack) {
 
     stack.length = 0;
 
-    return stackClone.reverse().map(function (tag) {
+    return stackClone.reverse().map(function(tag) {
         return '</' + tag + '>';
     }).join('');
 }
@@ -188,7 +188,7 @@ function range(low, high) {
  * @returns {function}
  */
 function notCategory(category) {
-    return function (e) {
+    return function(e) {
         return (category === null || e.category !== category) && category !== 'all';
     };
 }
@@ -225,10 +225,9 @@ function categoryForCode(code) {
 
 /**
  * @param {string} text
- * @param {object} options
  * @returns {string}
  */
-function pushText(text, options) {
+function pushText(text) {
     return text;
 }
 
@@ -445,7 +444,7 @@ function Filter(options) {
 }
 
 Filter.prototype = {
-    toHtml (input) {
+    toHtml(input) {
         input = typeof input === 'string' ? [input] : input;
         const stack = this.stack;
         const options = this.opts;
