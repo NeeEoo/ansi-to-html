@@ -26,7 +26,7 @@ function echo(str) {
 describe('cli', function () {
     it('converts colors', function (done) {
         const data = echo('what\033[0;31m what?');
-        const result = `what<span style="color:#A00"> what?${EOL}</span>`;
+        const result = `what<span style="color:#a00"> what?${EOL}</span>`;
 
         childProcess.exec(getColorCmd(data), {
             timeout: 10000

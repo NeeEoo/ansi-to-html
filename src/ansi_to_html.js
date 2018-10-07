@@ -15,7 +15,7 @@ function getDefaultColors() {
         4: '#00a',
         5: '#a0a',
         6: '#0aa',
-        7: '#aaa',
+        7: '#ccc',
         8: '#555',
         9: '#f55',
         10: '#5f5',
