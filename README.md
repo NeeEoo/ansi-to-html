@@ -25,7 +25,7 @@ It has a few additions:
 
 	/*
 		prints:
-		<span style="color:#000">black<span style="color:#AAA">white</span></span>
+		<span style="color:#000">black<span style="color:#ccc">white</span></span>
 	*/
 
 ## Command line usage
