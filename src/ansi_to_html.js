@@ -123,7 +123,7 @@ function handleDisplay(stack, code, options) {
         1: () => pushTag(stack, 'b'),
         3: () => pushTag(stack, 'i'),
         4: () => pushTag(stack, 'u'),
-        8: () => pushStyle(stack, 'display:none'),
+        8: () => pushStyle(stack, 'opacity:0'),
         9: () => pushTag(stack, 'strike'),
         22: () => closeTag(stack, 'b'),
         23: () => closeTag(stack, 'i'),
